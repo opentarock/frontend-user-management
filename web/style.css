@@ -1,0 +1,83 @@
+@viewport {
+    zoom: 1.0;
+    width: device-width;
+}
+
+* {
+    box-sizing: border: box;
+}
+
+body {
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 450px;
+    min-width: 390px;
+    padding-top: 60px;
+    text-align: center;
+    color: #424342;
+}
+
+a,
+a:visited,
+a:hover {
+    color: #435a66;
+}
+
+img#logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 40px;
+}
+
+fieldset {
+    border: none;
+    margin-top: 30px;
+}
+
+fieldset legend {
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    font-size: 1.3rem;
+    color: #424342;
+    text-align: center;
+    height: 3.1rem;
+    margin-top: 0.7rem;
+}
+
+input[type="submit"] {
+    color: #f5f2eb;
+    background-color: #435a66;
+    border: none;
+}
+
+footer {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+form #error {
+    color: red;
+    font-size: 0.9rem;
+    padding: 7px;
+    margin-top: 0.5rem;
+}
+
+.ng-cloak,
+.ng-hide,
+.ng-show {
+   display: none !important;
+}

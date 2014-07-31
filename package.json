@@ -1,0 +1,11 @@
+{
+    "name": "frontend-user-management",
+    "devDependencies": {
+        "karma-chrome-launcher": "*",
+        "karma-firefox-launcher": "*",
+        "karma": "*",
+        "karma-dart": "*",
+        "protractor": "*",
+        "protractor-dart": "*"
+    }
+}

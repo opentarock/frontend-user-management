@@ -1,0 +1,4 @@
+name: user_management_e2e
+dependencies:
+  js: any
+  protractor: any

@@ -1,0 +1,9 @@
+pubspec.lock
+.idea
+build/
+packages
+node_modules/
+**/*.dart.js
+**/*.dart.js.deps
+**/*.dart.js.map
+**/*.dart.precompiled.js

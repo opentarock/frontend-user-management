@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <title>Sign in - OpenTarock</title>
+</head>
+<body user-register>
+    <img id="logo" src="http://placehold.it/120x120&text=OpenTarock" />
+    <form ng-submit="ctrl.registerSubmit()">
+        <fieldset>
+            <legend>Create your OpenTarock Account</legend>
+            <section class="input-group">
+                <input id="name" name="name" type="text" ng-model="ctrl.displayName" placeholder="Display Name" required autofocus>
+                <input id="email" name="email" type="email" ng-model="ctrl.email" placeholder="Email Address" required>
+                <input id="password" name="password" type="password" ng-model="ctrl.password" placeholder="Password" required>
+                <span id="error" ng-show="ctrl.isError()" class="ng-cloak">{{ctrl.errorMessage}}</span>
+                <input id="signUp" type="submit" value="Sign Up">
+            </section>
+        </fieldset>
+    </form>
+    <footer>Already have an account? <a href="#">Sign In</a></footer>
+    <script src="packages/shadow_dom/shadow_dom.min.js"></script>
+    <script type="application/dart" src="main.dart"></script>
+    <script type="text/javascript" src="packages/browser/dart.js"></script>
+</body>
+</html>

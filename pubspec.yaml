@@ -1,0 +1,15 @@
+name: user_management
+version: 0.0.1
+dependencies:
+  angular: any
+  browser: any
+  js: any
+  shadow_dom: any
+dev_dependencies:
+  unittest: any
+  guinness: any
+  mock: any
+  mockito: any
+  protractor: any
+transformers:
+  - angular
