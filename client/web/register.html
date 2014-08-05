@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static/style.css">
+    <title>Sign in - OpenTarock</title>
+</head>
+<body>
+    <img id="logo" src="http://placehold.it/120x120&text=OpenTarock" />
+    <form user-register name="regForm" ng-submit="form.registerSubmit()" novalidate>
+        <fieldset>
+            <legend>Create your OpenTarock Account</legend>
+            <section class="input-group">
+                <input id="name" name="display_name" type="text" ng-model="form.displayName" placeholder="Display Name" required autofocus>
+                <span class="input-error" ng-show="form.isInputError('display_name')" ng-cloak>{{form.inputErrors['display_name']}}</span>
+                <input id="email" name="email" type="email" ng-model="form.email" placeholder="Email Address" required>
+                <span class="input-error" ng-show="form.isInputError('email')" ng-cloak>{{form.inputErrors['email']}}</span>
+                <input id="password" name="password" type="password" ng-model="form.password" placeholder="Password" required>
+                <span class="input-error" ng-show="form.isInputError('password')" ng-cloak>{{form.inputErrors['password']}}</span>
+                <span id="error" ng-show="form.isError()" ng-cloak>{{form.errorMessage}}</span>
+                <input id="signUp" type="submit" value="Sign Up">
+            </section>
+        </fieldset>
+    </form>
+    <footer>Already have an account? <a href="#">Sign In</a></footer>
+    <script type="application/dart" src="static/main.dart"></script>
+    <script type="text/javascript" src="static/packages/browser/dart.js"></script>
+</body>
+</html>

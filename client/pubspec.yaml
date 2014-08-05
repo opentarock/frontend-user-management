@@ -5,6 +5,7 @@ dependencies:
   browser: any
   js: any
   shadow_dom: any
+  dart_to_js_script_rewriter: any
 dev_dependencies:
   unittest: any
   guinness: any
@@ -13,3 +14,4 @@ dev_dependencies:
   protractor: any
 transformers:
   - angular
+  - dart_to_js_script_rewriter

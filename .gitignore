@@ -7,3 +7,4 @@ node_modules/
 **/*.dart.js.deps
 **/*.dart.js.map
 **/*.dart.precompiled.js
+server/tmp/

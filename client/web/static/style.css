@@ -4,7 +4,7 @@
 }
 
 * {
-    box-sizing: border: box;
+    box-sizing: border-box;
 }
 
 body {
@@ -76,8 +76,19 @@ form #error {
     margin-top: 0.5rem;
 }
 
-.ng-cloak,
-.ng-hide,
-.ng-show {
-   display: none !important;
+.input-error {
+    color: #b32c0e;
+    font-size: 0.9rem;
+}
+
+span.input-error {
+    padding: 0 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.7rem;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], .ng-cloak, .ng-hide {
+    display: none !important;
 }

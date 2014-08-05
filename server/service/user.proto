@@ -1,0 +1,38 @@
+package proto_user;
+
+// id = 1
+message User {
+  optional uint64 id = 1;
+  optional string display_name = 2;
+  optional string email = 3;
+  optional string password = 4;
+}
+
+// id = 20
+message RegisterUser {
+  required User user = 1;
+  optional string redirect_uri = 2;
+  optional string locale = 3;
+}
+
+// id = 21
+message RegisterResponse {
+  optional string redirect_uri = 1;
+  optional bool valid = 2;
+  message InputError {
+    required string name = 1;
+    required string error_message = 2;
+  }
+  repeated InputError errors = 3;
+}
+
+// id = 30
+message AuthenticateUser {
+  required string email = 1;
+  required string password = 2;
+}
+
+// id = 31
+message AuthenticateResult {
+  optional string sid = 1;
+}
